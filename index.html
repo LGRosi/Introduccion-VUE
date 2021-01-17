@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="icon" href="imagenes/nota.png" />
+        <title>Musindi | Lucas Rosi</title>
+    </head>
+
+
+    <body class="fondobody">
+
+        <div class="cambios">
+            
+            <header class="container-fluid fondoheader h-100 mb-5">
+                <h1 class="logo">Instrumentos musicales</h1>
+                <div class="row">
+                    <nav class="col px-md-5 navbar fixed-top navbar-expand-md navbar-dark fondoheader">
+                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#barra" aria-controls="barra" aria-expanded="false" aria-label="Menú Hamburguesa">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="barra">
+                            <ul class="navbar-nav text-center ml-auto">
+                                <li class="nav-item">
+                                    <router-link class="nav-link" to="/" exact>INICIO</router-link>
+                                </li>
+                                <li class="nav-item">
+                                    <router-link class="nav-link" to="/productos" exact>PRODUCTOS</router-link>
+                                    
+                                </li>
+                                <li class="nav-item">
+                                    <router-link class="nav-link" to="/contacto" exact>CONTACTO</router-link>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="imagenes/elCarrito.svg" alt="Carrito de compras" class="elCarrito ml-md-3 mt-1" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+
+            <transition name="fade" mode="out-in">
+
+                <router-view></router-view>
+
+            </transition>
+        
+        </div>
+        
+       
+        
+            <script src="js/jquery-3.5.1.js"></script>
+            <script src="js/bootstrap.bundle.min.js"></script>
+
+
+            
+
+            <!--VUE.JS-->
+            <script src="js/vue.js"></script>
+            <script src="js/router/vue-router.js"></script>
+            <script src="js/misComponentes/componente-index.js"></script>
+            <script src="js/misComponentes/componente-productos.js"></script>
+            <script src="js/misComponentes/componente-contacto.js"></script>
+            <script src="js/router/rutas.js"></script>
+            <script src="js/vue2-filters.js"></script>
+            <script src="js/app.js"></script>
+            
+
+            <!--SERVICE WORKER-->
+            <script src="js/scriptsw.js"></script>
+
+
+
+            
+            <script>
+                $('.nav-item').on('click', function() {
+                    $(".navbar-collapse").collapse("hide");
+                })
+            </script>
+
+
+            <script>
+                document.createElement("picture");
+            </script>
+            <script src="js/picturefill.js"></script>
+
+            <script>
+                $('#myModal').on('shown.bs.modal', function () {
+                $('#myInput').trigger('focus')
+                })
+            </script>
+
+      
+    </body>
+</html>
