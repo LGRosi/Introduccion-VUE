@@ -1,2 +1,3 @@
-# VUE.JS-TERCER-CUATRIMESTRE-TP2
-Ecommerce instrumentos musicales
+# Introducción a Vue.js
+
+### Ecommerce de instrumentos musicales.
